@@ -55,6 +55,24 @@ namespace WorkoutPointSystem2.Controllers
             return (((distance * 100) + (elevGain / distance)) / (minutes / 60));
         }
 
+        public double CalculateStationaryBikePoints(double distance)
+        {
+            return ((distance / 3) * 100);
+        }
 
+        public double CalculateOutdoorBikePoints(double distance, double elevGain)
+        {
+            return (((distance / 3) * 100) + (elevGain / distance));
+        }
+
+        public double CalculateWorkoutPoints(double avgerageHB, double minutes)
+        {
+            return (avgerageHB * (minutes / 15));
+        }
+
+        public double CalculateSkiBoardSurfPoints(double minutes)
+        {
+            return (minutes / 30);
+        }
     }
 }

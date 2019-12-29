@@ -1,7 +1,21 @@
 ﻿@{
     ViewData["Title"] = "About";
+    ViewData["Message"] = "Below are details of how points are counted for each workout:";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>- stationary, track, or flat running is calculated as follows: (distance x 100)</p>
+<p>- trail running is calculated as follows: ((distance x 100) + (elevation gain / distance))</p>
+<p>- a hike is calculated as follows: (((distance x 100) + (elevation gain / distance)) / (minutes / 60))</p>
+<p>- stationary bike is calculated as follows: ((distance / 3) x 100)</p>
+<p>- outdoor bike ride, regardless of mountain or road, is calculated as follows: (((distance / 3) x 100) + (elevation gain / distance))</p>
+<p>- a workout is calculated as follows: (average heartbeat x (minutes of workout / 15))</p>
+<p>- skiing, snowboarding, or surfing is calculated as follows: (minutes / 30)</p>
+<br />
+
+<p>
+    <address>
+        <strong>With any questions, pease email:</strong> <a href="mailto:gatesalamb@gmail.com">gatesalamb@gmail.com</a><br />
+    </address>
+</p>
